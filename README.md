@@ -1,3 +1,8 @@
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![License](https://img.shields.io/github/license/danindraa/nlp-spam-classification)
+![Colab](https://img.shields.io/badge/Google%20Colab-Notebook-yellow)
+
+
 # 📨 NLP Spam Classification
 
 Proyek ini bertujuan untuk mengklasifikasi email sebagai spam atau non-spam menggunakan teknik Natural Language Processing (NLP), Machine Learning, dan Deep Learning.
