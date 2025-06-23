@@ -38,28 +38,4 @@ Proyek ini bertujuan untuk mengklasifikasi email sebagai spam atau non-spam meng
   - Distribusi cluster untuk unsupervised
 
 ## 📂 Struktur Folder
-  nlp-spam-classification/
-│
-├── data/
-│ └── emails.csv
-│
-├── notebooks/
-│ ├── 1_preprocessing_vectorization.ipynb
-│ ├── 2_ml_models.ipynb
-│ ├── 3_lstm_model.ipynb
-│ └── 4_transformer_model.ipynb
-│
-├── .gitignore
-├── LICENSE
-├── README.md
-└── requirements.txt 
-  
-## 💻 Cara Menjalankan
 
-1. Clone repositori:
-
-```bash
-git clone https://github.com/danindraa/nlp-spam-classification.git
-cd nlp-spam-classification
-
- pip install -r requirements.txt
