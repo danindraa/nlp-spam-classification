@@ -1,31 +1,65 @@
-# 📧 NLP Spam Email Classification
+# 📨 NLP Spam Classification
 
-Proyek ini mengklasifikasikan email sebagai **spam** atau **non-spam** menggunakan Natural Language Processing (NLP), Machine Learning, dan Deep Learning.
+Proyek ini bertujuan untuk mengklasifikasi email sebagai spam atau non-spam menggunakan teknik Natural Language Processing (NLP), Machine Learning, dan Deep Learning.
 
----
+## 📁 Dataset
+- Dataset: `emails.csv`
+- Jumlah data: 5.731 email
+- Kolom: `text` (isi email), `label` (1 = spam, 0 = ham)
+- Sumber: Kaggle
 
-## 📂 Dataset
+## 🔍 Tahapan Proyek
 
-Dataset `emails.csv` berisi **5.731 email** dengan dua kolom:
-- `text`: isi email
-- `spam`: label (0 = non-spam, 1 = spam)
+### 1. Preprocessing & Vektorisasi
+- Cleaning: lowercase, hapus karakter non-alfabet, stopword removal, stemming
+- Tokenisasi teks
+- Vektorisasi:
+  - Bag of Words
+  - TF-IDF
+  - Word2Vec
+  - GloVe
+  - FastText
 
-Disimpan di: `data/emails.csv`
+### 2. Machine Learning
+- Logistic Regression
+- Random Forest
+- Support Vector Machine (SVM)
+- K-Nearest Neighbor (KNN)
+- KMeans Clustering (unsupervised)
 
----
+### 3. Deep Learning
+- **LSTM Model**: menggunakan layer embedding dan LSTM
+- **Transformer Model**: menggunakan Multi-Head Attention, Layer Normalization, dan Dense layer
 
-## ⚙️ Fitur dan Model
+### 4. Evaluasi
+- Metode evaluasi:
+  - Classification report (presisi, recall, f1-score)
+  - Akurasi model
+  - Distribusi cluster untuk unsupervised
 
-- Preprocessing teks: lowercasing, remove symbols, stopwords, stemming
-- Vectorization: BoW, TF-IDF, Word2Vec, GloVe, FastText
-- Machine Learning: Logistic Regression, SVM, Random Forest, KNN
-- Deep Learning: LSTM, Transformer (Keras)
+## 📂 Struktur Folder
+  nlp-spam-classification/
+│
+├── data/
+│ └── emails.csv
+│
+├── notebooks/
+│ ├── 1_preprocessing_vectorization.ipynb
+│ ├── 2_ml_models.ipynb
+│ ├── 3_lstm_model.ipynb
+│ └── 4_transformer_model.ipynb
+│
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt 
+  
+## 💻 Cara Menjalankan
 
----
+1. Clone repositori:
 
-## 🛠️ Cara Menjalankan
-
-1. Clone repo:
 ```bash
 git clone https://github.com/danindraa/nlp-spam-classification.git
 cd nlp-spam-classification
+
+ pip install -r requirements.txt
